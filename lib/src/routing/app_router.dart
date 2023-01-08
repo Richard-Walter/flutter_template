@@ -6,7 +6,7 @@ import '../features/items/presentation/item_screen/sample_item_details_view.dart
 import 'not_found_screen.dart';
 import '../features/settings/presentation/settings_controller.dart';
 import '../features/settings/presentation/settings_screen.dart';
-import '../features/settings/services/settings_service.dart';
+import '../features/settings/application/settings_service.dart';
 
 enum AppRoute { home, item, settings }
 
