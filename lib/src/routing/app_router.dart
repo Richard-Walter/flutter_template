@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/src/features/home/sample_item_list_screen.dart';
+import 'package:flutter_template/src/features/items/presentation/item_list_screen/sample_item_list_screen.dart';
 import 'package:go_router/go_router.dart';
 
-import '../features/item/sample_item_details_view.dart';
-import '../features/not_found/not_found_screen.dart';
-import '../features/settings/settings_controller.dart';
-import '../features/settings/settings_screen.dart';
-import '../features/settings/settings_service.dart';
+import '../features/items/presentation/item_screen/sample_item_details_view.dart';
+import 'not_found_screen.dart';
+import '../features/settings/presentation/settings_controller.dart';
+import '../features/settings/presentation/settings_screen.dart';
+import '../features/settings/services/settings_service.dart';
 
 enum AppRoute { home, item, settings }
 

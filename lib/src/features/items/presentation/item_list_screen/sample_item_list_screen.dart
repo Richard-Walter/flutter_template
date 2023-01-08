@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../item/sample_item.dart';
+import '../../domain/sample_item.dart';
 
 /// Displays a list of SampleItems.
 class SampleItemListView extends StatelessWidget {

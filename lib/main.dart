@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_template/src/localization/string_hardcoded.dart';
 import 'dart:async';
 import 'src/app.dart';
-import 'src/features/settings/settings_controller.dart';
-import 'src/features/settings/settings_service.dart';
+import 'src/features/settings/presentation/settings_controller.dart';
+import 'src/features/settings/services/settings_service.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 
 void main() async {
