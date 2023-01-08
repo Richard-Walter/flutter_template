@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
-import '../settings/settings_screen.dart';
 import '../item/sample_item.dart';
 
 /// Displays a list of SampleItems.

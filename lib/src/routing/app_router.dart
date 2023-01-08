@@ -12,10 +12,12 @@ enum AppRoute { home, item, settings }
 
 //TODO can this be a provider
 final settingsController = SettingsController(SettingsService());
+// await settingsController.loadSettings()
 
 //nesting subroutes means that a back button is displayed on the app toolbar
 //Note: we dont add the / to cart route.  Go router takes care of this
 final goRouter = GoRouter(
+  
   initialLocation: '/',
   debugLogDiagnostics: false,
   routes: [
