@@ -4,9 +4,14 @@ import 'package:go_router/go_router.dart';
 
 import '../features/item/sample_item_details_view.dart';
 import '../features/not_found/not_found_screen.dart';
+import '../features/settings/settings_controller.dart';
 import '../features/settings/settings_screen.dart';
+import '../features/settings/settings_service.dart';
 
 enum AppRoute { home, item, settings }
+
+//TODO can this be a provider
+final settingsController = SettingsController(SettingsService());
 
 //nesting subroutes means that a back button is displayed on the app toolbar
 //Note: we dont add the / to cart route.  Go router takes care of this
@@ -27,15 +32,15 @@ final goRouter = GoRouter(
           );
         },
       ),
-      // GoRoute(
-      //   path: 'settings',
-      //   name: AppRoute.settings.name,
-      //   // page builder lets us customise the transistions, in this case full screen dialog
-      //   // which will have a close button instead of the back button as with builder
-      //   builder: (context, state) {
-      //     return SettingsView(settingsController);
-      //   },
-      // ),
+      GoRoute(
+        path: 'settings',
+        name: AppRoute.settings.name,
+        // page builder lets us customise the transistions, in this case full screen dialog
+        // which will have a close button instead of the back button as with builder
+        builder: (context, state) {
+          return SettingsView(controller: settingsController,);
+        },
+      ),
     ]),
   ],
   errorBuilder: (context, state) {

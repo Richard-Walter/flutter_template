@@ -9,6 +9,7 @@ void main() async {
   
   // Set up the SettingsController, which will glue user settings to multiple
   // Flutter Widgets.
+  // todo add this as a provider? and fix up settings route 
   final settingsController = SettingsController(SettingsService());
 
   // Load the user's preferred theme while the splash screen is displayed.
